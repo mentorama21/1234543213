@@ -4,6 +4,7 @@ import { Theme, Link, Image, Hr, Text, Button, Section, Input } from "@quarkly/w
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml } from "@quarkly/components";
+import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -49,14 +50,16 @@ export default (() => {
 			</Button>
 			<Hr />
 		</Section>
-		<Section height="400px">
+		<Section height="400px" lg-height="900px">
 			<Input />
 			<Input />
 			<Input />
 			<Button>
 				Button
 			</Button>
+			<Components.QuarklycommunityKitFormspree />
 		</Section>
+		<Components.QuarklycommunityKitFormspree />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
