@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tender-noyce-2108a4.netlify.app/sitemap-index.xml
