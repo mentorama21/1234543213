@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tender-noyce-2108a4.netlify.app/sitemap-index.xml
+Sitemap: https://pensive-ride-0ac29f.netlify.app/sitemap-index.xml
