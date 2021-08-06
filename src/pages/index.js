@@ -3,7 +3,7 @@ import theme from "theme";
 import { Theme, Link, Image, Hr, Text, Button, Section, Input } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml, StackItem, Stack } from "@quarkly/components";
+import { RawHtml, Override, StackItem, Stack } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -49,13 +49,12 @@ export default (() => {
 			</Button>
 			<Hr />
 		</Section>
-		<Section height="400px" lg-height="600px">
+		<Section height="600px" lg-height="600px">
 			<Section
 				padding="60px 0"
 				sm-padding="40px 0"
-				min-height="600px"
+				min-height="300px"
 				sm-min-height="auto"
-				background="--color-light"
 				display="flex"
 				flex-direction="column"
 				lg-background="#ffffff"
@@ -70,7 +69,8 @@ export default (() => {
 						lg-color="#000000"
 						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
 					>
-						<Text margin="0px" lg-font="normal normal 600 26px/36px Montserrat, sans-serif">
+						<Override slot="StackItemContent" color="#000000" font="normal 600 30px/36px -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif" />
+						<Text margin="0px" lg-font="normal normal 600 26px/36px Montserrat, sans-serif" font="600 26px/36px --fontFamily-googleMontserrat">
 							13 módulos
 						</Text>
 					</StackItem>
@@ -81,7 +81,7 @@ export default (() => {
 						lg-color="#000000"
 						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
 					>
-						<Text margin="0px" lg-font="normal normal 600 26px/36px Montserrat, sans-serif">
+						<Text margin="0px" lg-font="normal normal 600 26px/36px Montserrat, sans-serif" color="#000000" font="600 26px/36px --fontFamily-googleMontserrat">
 							4 meses
 						</Text>
 					</StackItem>
@@ -92,7 +92,7 @@ export default (() => {
 						lg-color="#000000"
 						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
 					>
-						<Text margin="0px" lg-font="normal normal 600 26px/36px Montserrat, sans-serif">
+						<Text margin="0px" lg-font="normal normal 600 26px/36px Montserrat, sans-serif" color="#000000" font="600 26px/36px --fontFamily-googleMontserrat">
 							projeto de conclusão
 						</Text>
 					</StackItem>
@@ -103,7 +103,7 @@ export default (() => {
 						lg-color="#000000"
 						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
 					>
-						<Text margin="0px" lg-font="normal normal 600 26px/36px Montserrat, sans-serif">
+						<Text margin="0px" lg-font="normal normal 600 26px/36px Montserrat, sans-serif" color="#000000" font="600 26px/36px --fontFamily-googleMontserrat">
 							um mentor
 						</Text>
 					</StackItem>
@@ -116,7 +116,7 @@ export default (() => {
 						lg-color="#000000"
 						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
 					>
-						<Text margin="0px">
+						<Text margin="0px" color="#000000" font="normal 16px/24px --fontFamily-googleMontserrat">
 							de material exclusivo sobre UX design
 						</Text>
 					</StackItem>
@@ -127,7 +127,7 @@ export default (() => {
 						lg-color="#000000"
 						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
 					>
-						<Text margin="0px">
+						<Text margin="0px" color="#000000" font="normal 16px/24px --fontFamily-googleMontserrat">
 							de aprendizagem na prática
 						</Text>
 					</StackItem>
@@ -138,7 +138,7 @@ export default (() => {
 						lg-color="#000000"
 						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
 					>
-						<Text margin="0px">
+						<Text margin="0px" color="#000000" font="normal 16px/24px --fontFamily-googleMontserrat">
 							para um cliente real
 						</Text>
 					</StackItem>
@@ -149,7 +149,7 @@ export default (() => {
 						lg-color="#000000"
 						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
 					>
-						<Text margin="0px">
+						<Text margin="0px" color="#000000" font="normal 16px/24px --fontFamily-googleMontserrat">
 							expert da área
 						</Text>
 					</StackItem>
