@@ -61,6 +61,7 @@ export default (() => {
 				lg-height="300px"
 				lg-min-height="300px"
 			>
+				<Override slot="SectionContent" width="100%" />
 				<Stack margin-top="auto" color="--grey" font="--base">
 					<StackItem
 						width="25%"
