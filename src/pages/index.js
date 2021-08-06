@@ -3,7 +3,7 @@ import theme from "theme";
 import { Theme, Link, Image, Hr, Text, Button, Section, Input } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml } from "@quarkly/components";
+import { RawHtml, StackItem, Stack } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -50,7 +50,112 @@ export default (() => {
 			</Button>
 			<Hr />
 		</Section>
-		<Section height="400px" lg-height="900px">
+		<Section height="400px" lg-height="600px">
+			<Section
+				padding="60px 0"
+				sm-padding="40px 0"
+				min-height="600px"
+				sm-min-height="auto"
+				background="--color-light"
+				display="flex"
+				flex-direction="column"
+				lg-background="#ffffff"
+				lg-height="300px"
+				lg-min-height="300px"
+			>
+				<Stack margin-top="auto" color="--grey" font="--base">
+					<StackItem
+						width="25%"
+						md-width="50%"
+						sm-width="100%"
+						lg-color="#000000"
+						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
+					>
+						<Text margin="0px" lg-font="normal normal 600 26px/36px Montserrat, sans-serif">
+							13 módulos
+						</Text>
+					</StackItem>
+					<StackItem
+						width="25%"
+						md-width="50%"
+						sm-width="100%"
+						lg-color="#000000"
+						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
+					>
+						<Text margin="0px" lg-font="normal normal 600 26px/36px Montserrat, sans-serif">
+							4 meses
+						</Text>
+					</StackItem>
+					<StackItem
+						width="25%"
+						md-width="50%"
+						sm-width="100%"
+						lg-color="#000000"
+						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
+					>
+						<Text margin="0px" lg-font="normal normal 600 26px/36px Montserrat, sans-serif">
+							projeto de conclusão
+						</Text>
+					</StackItem>
+					<StackItem
+						width="25%"
+						md-width="50%"
+						sm-width="100%"
+						lg-color="#000000"
+						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
+					>
+						<Text margin="0px" lg-font="normal normal 600 26px/36px Montserrat, sans-serif">
+							um mentor
+						</Text>
+					</StackItem>
+				</Stack>
+				<Stack margin-top="auto" color="--grey" font="--base">
+					<StackItem
+						width="25%"
+						md-width="50%"
+						sm-width="100%"
+						lg-color="#000000"
+						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
+					>
+						<Text margin="0px">
+							de material exclusivo sobre UX design
+						</Text>
+					</StackItem>
+					<StackItem
+						width="25%"
+						md-width="50%"
+						sm-width="100%"
+						lg-color="#000000"
+						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
+					>
+						<Text margin="0px">
+							de aprendizagem na prática
+						</Text>
+					</StackItem>
+					<StackItem
+						width="25%"
+						md-width="50%"
+						sm-width="100%"
+						lg-color="#000000"
+						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
+					>
+						<Text margin="0px">
+							para um cliente real
+						</Text>
+					</StackItem>
+					<StackItem
+						width="25%"
+						md-width="50%"
+						sm-width="100%"
+						lg-color="#000000"
+						lg-font="normal 15px/23px --fontFamily-googleMontserrat"
+					>
+						<Text margin="0px">
+							expert da área
+						</Text>
+					</StackItem>
+				</Stack>
+			</Section>
 			<Input />
 			<Input />
 			<Input />
